@@ -1,0 +1,3 @@
+[submodule "Pokemon/Pokemon/back/TP_Pokemon_Back"]
+	path = Pokemon/Pokemon/back/TP_Pokemon_Back
+	url = https://github.com/nicolasscolnik/TP_Pokemon_Back.git
