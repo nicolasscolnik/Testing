@@ -164,10 +164,10 @@ const toggleSonido = () => {
 
     <button type="button" class="btn btn-danger" @click="comienzaJuego" v-if="!mostrarComponentes">Comenzar!</button>
     <hr>
-
+    <div>{{ storeArena }}</div>
     <hr>
     <div class="luchadores-container" v-if="mostrarComponentes">
-        <div>{{ storeArena }}</div>
+
         <MaestroPokemon v-if="jugador1" :nombre="jugador1.nombre" @horadeluchar="enviarPokemonALaArena2($event, 1)"
             @lastimar="atacar(1)" @curar="curar(1)" :pokemons="pokemones1" :tuTurno="esMiTurno"
             :pokemonEnArena="pokemonEnArena1" :numeroJugador="1" :botonera="true">
